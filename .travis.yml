@@ -1,1 +1,5 @@
 langage: cpp
+compiler:
+  - g++
+script:
+  - make
