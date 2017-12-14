@@ -11,7 +11,7 @@ before_install:
   
 intstall: 
   # C++11
-  sudo apt-get install -qq g++-5
+  - sudo apt-get install -qq g++-5
 script:
   - make
   ./hello
