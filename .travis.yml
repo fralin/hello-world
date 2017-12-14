@@ -1,4 +1,4 @@
-langage: cpp
+language: cpp
 compiler:
   - g++
 script:
