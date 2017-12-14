@@ -1,12 +1,14 @@
+sudo: require
 language: cpp
 compiler: g++
 dist: trusty
-sudo: require
 
 before_install:
+  - sudo pip install codecov
   # C++11
   - add-apt-repository --yes ppa:ubuntu-toolchain-r/test
   - sudo apt-get update -qq
+  
 intstall: 
   # C++11
   sudo apt-get install -qq g++-5
