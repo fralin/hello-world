@@ -1,5 +1,15 @@
 language: cpp
-compiler:
-  - g++
+compiler: g++
+dist: trusty
+sudo: require
+
+before_install:
+  # C++11
+  - add-apt-repository --yes ppa:ubuntu-toolchain-r/test
+  - sudo apt-get update -qq
+intstall: 
+  # C++11
+  sudo apt-get install -qq g++-5
 script:
   - make
+  ./hello
