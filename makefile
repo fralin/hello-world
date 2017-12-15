@@ -1,8 +1,8 @@
 CC = g++
-CFLAGS = -Wall
+CFLAGS = -Wall -fprofile-arcs -ftest-coverage
 EXEC_NAME = hello
 INCLUDES = 
-LIBS =
+LIBS = -lgcov
 OBJ_FILES = hello.o
 
 all: $(EXEC_NAME)
