@@ -8,3 +8,8 @@ before_install:
 script:
   - make
   - ./hello
+  - ./get_code_cov.sh
+  - codecov
+  
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
